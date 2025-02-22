@@ -17,7 +17,7 @@ List<UnbordingContent> contents = [
       title: 'Compete',
       image: 'assets/images/Spl2.png',
       discription:
-          "Play online with your friends and top the leaderboard!."),
+          "Play with your friends and top the leaderboard!."),
   UnbordingContent(
       title: 'Scoreboard',
       image: 'assets/images/Spl3.png',

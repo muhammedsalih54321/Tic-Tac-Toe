@@ -49,7 +49,9 @@ class _PlayerCreatingScreenState extends State<PlayerCreatingScreen> {
                         enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.r),
                             borderSide: BorderSide(color: Color(0xFF262626))),
-                        focusedBorder: InputBorder.none,
+                         focusedBorder: OutlineInputBorder(
+                          borderSide: BorderSide(color: Color(0xFF262626)),
+                          borderRadius: BorderRadius.circular(8.r)),
                         hintText: 'Player1 Name',
                         hintStyle: GoogleFonts.poppins(
                           color: Color(0xFF7C7C7C),
@@ -67,7 +69,7 @@ class _PlayerCreatingScreenState extends State<PlayerCreatingScreen> {
                   SizedBox(
                     height: 30.h,
                   ),
-                  TextFormField(
+                  TextFormField(textInputAction: TextInputAction.done,
                     controller: player2,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
